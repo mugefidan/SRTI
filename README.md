@@ -29,7 +29,7 @@ agent 3 prefers agent 1 to agent 2, and prefers agent 2 to agent 4.
 
 agent 4 preferes agent 2 to agent 3.
 
-For Clingo the input file should be a .lp file which contains atoms that represents the instance. We formalize the input I = (A,≺) of an SRTI instance in ASP by a set F_I of facts using atoms of the forms agent(x) (“x is an agent in A”) and prefer2(x, y,z) (“agent x prefers agent y to agent z). For every agent x, since x prefers being matched with a roommate acceptable y instead of being single, for every y, we also add facts of the form prefer2(x, y, x). 
+For Clingo the input file should be a .lp file which contains atoms that represents the instance. We formalize the input of an SRTI instance in ASP by a set of facts using atoms of the forms agent(x) (“x is an agent in A”) and prefer2(x, y,z) (“agent x prefers agent y to agent z). For every agent x, since x prefers being matched with a roommate acceptable y instead of being single, for every y, we also add facts of the form prefer2(x, y, x). 
 
 Referring to the previous example, the corresponding .lp file would contain:
 
